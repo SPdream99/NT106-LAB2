@@ -1,6 +1,6 @@
-﻿namespace Lab1
+﻿namespace Lab2
 {
-    partial class Lab01_Bai05
+    partial class Lab02_Bai05
     {
         /// <summary>
         /// Required designer variable.
@@ -238,7 +238,7 @@
             this.BillBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BillBox.Visible = false;
             // 
-            // Lab01_Bai05
+            // Lab02_Bai05
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,7 +262,7 @@
             this.Controls.Add(this.Title);
             this.Controls.Add(this.RemoveButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Lab01_Bai05";
+            this.Name = "Lab02_Bai05";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "Bai5";
             this.Load += new System.EventHandler(this.Form1_Load);

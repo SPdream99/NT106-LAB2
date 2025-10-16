@@ -31,7 +31,7 @@ cd "NT106-LAB2\src"
 start Lab2.csproj
 ```
 
-### 4. Build và chạy Lab01
+### 4. Build và chạy Lab02
 * Set Lab02 thành Startup Project
 * Debug -> Start Debugging
 

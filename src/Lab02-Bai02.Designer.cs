@@ -1,6 +1,6 @@
-﻿namespace Lab1
+﻿namespace Lab2
 {
-    partial class Lab01_Bai02
+    partial class Lab02_Bai02
     {
         /// <summary>
         /// Required designer variable.
@@ -185,7 +185,7 @@
             this.ResultMin.Size = new System.Drawing.Size(158, 22);
             this.ResultMin.TabIndex = 12;
             // 
-            // Lab01_Bai02
+            // Lab02_Bai02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,7 +205,7 @@
             this.Controls.Add(this.Title);
             this.Controls.Add(this.RemoveButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Lab01_Bai02";
+            this.Name = "Lab02_Bai02";
             this.Text = " Bai2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -1,6 +1,6 @@
-﻿namespace Lab1
+﻿namespace Lab2
 {
-    partial class Lab01
+    partial class Lab02
     {
         /// <summary>
         /// Required designer variable.
@@ -35,8 +35,6 @@
             this.Bai5Button = new System.Windows.Forms.Button();
             this.Bai6Button = new System.Windows.Forms.Button();
             this.Bai7Button = new System.Windows.Forms.Button();
-            this.Bai8Button = new System.Windows.Forms.Button();
-            this.Bai9Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bai1Button
@@ -83,7 +81,7 @@
             this.Bai4Button.Name = "Bai4Button";
             this.Bai4Button.Size = new System.Drawing.Size(193, 74);
             this.Bai4Button.TabIndex = 2;
-            this.Bai4Button.Text = "Bài 3.1 (4)";
+            this.Bai4Button.Text = "Bài 4";
             this.Bai4Button.UseVisualStyleBackColor = true;
             this.Bai4Button.Click += new System.EventHandler(this.Bai4Button_Click);
             // 
@@ -123,37 +121,11 @@
             this.Bai7Button.UseVisualStyleBackColor = true;
             this.Bai7Button.Click += new System.EventHandler(this.Bai7Button_Click);
             // 
-            // Bai8Button
-            // 
-            this.Bai8Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bai8Button.Location = new System.Drawing.Point(311, 325);
-            this.Bai8Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Bai8Button.Name = "Bai8Button";
-            this.Bai8Button.Size = new System.Drawing.Size(193, 74);
-            this.Bai8Button.TabIndex = 6;
-            this.Bai8Button.Text = "Bài 8";
-            this.Bai8Button.UseVisualStyleBackColor = true;
-            this.Bai8Button.Click += new System.EventHandler(this.Bai8Button_Click);
-            // 
-            // Bai9Button
-            // 
-            this.Bai9Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bai9Button.Location = new System.Drawing.Point(544, 325);
-            this.Bai9Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Bai9Button.Name = "Bai9Button";
-            this.Bai9Button.Size = new System.Drawing.Size(193, 74);
-            this.Bai9Button.TabIndex = 7;
-            this.Bai9Button.Text = "Bài 9";
-            this.Bai9Button.UseVisualStyleBackColor = true;
-            this.Bai9Button.Click += new System.EventHandler(this.Bai9Button_Click);
-            // 
-            // Lab01
+            // Lab02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Bai9Button);
-            this.Controls.Add(this.Bai8Button);
             this.Controls.Add(this.Bai7Button);
             this.Controls.Add(this.Bai6Button);
             this.Controls.Add(this.Bai5Button);
@@ -162,8 +134,8 @@
             this.Controls.Add(this.Bai2Button);
             this.Controls.Add(this.Bai1Button);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Lab01";
-            this.Text = "Lab1";
+            this.Name = "Lab02";
+            this.Text = "Lab2";
             this.ResumeLayout(false);
 
         }
@@ -177,7 +149,5 @@
         private System.Windows.Forms.Button Bai5Button;
         private System.Windows.Forms.Button Bai6Button;
         private System.Windows.Forms.Button Bai7Button;
-        private System.Windows.Forms.Button Bai8Button;
-        private System.Windows.Forms.Button Bai9Button;
     }
 }

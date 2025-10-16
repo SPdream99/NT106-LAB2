@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Lab1
+namespace Lab2
 {
-    public partial class Lab01_Bai03 : Form
+    public partial class Lab02_Bai03 : Form
     {
-        public Lab01_Bai03()
+        public Lab02_Bai03()
         {
             InitializeComponent();
         }

@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab1
+namespace Lab2
 {
-    public partial class Lab01_Bai06 : Form
+    public partial class Lab02_Bai06 : Form
     {
-        public Lab01_Bai06()
+        public Lab02_Bai06()
         {
             InitializeComponent();
         }

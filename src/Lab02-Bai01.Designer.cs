@@ -1,6 +1,6 @@
-﻿namespace Lab1
+﻿namespace Lab2
 {
-    partial class Lab01_Bai01
+    partial class Lab02_Bai01
     {
         /// <summary>
         /// Required designer variable.
@@ -115,7 +115,7 @@
             this.ResultBox.Size = new System.Drawing.Size(228, 22);
             this.ResultBox.TabIndex = 6;
             // 
-            // Lab01_Bai01
+            // Lab02_Bai01
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -130,7 +130,7 @@
             this.Controls.Add(this.Title);
             this.Controls.Add(this.CalculateButton);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Lab01_Bai01";
+            this.Name = "Lab02_Bai01";
             this.Text = "Bai1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
