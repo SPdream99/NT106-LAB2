@@ -22,23 +22,5 @@ namespace Lab2
         {
 
         }
-
-        private void CalculateButton_Click(object sender, EventArgs e)
-        {
-            int num1, num2;
-            long sum = 0;
-            try
-            {
-                num1 = Int32.Parse(FirstText.Text);
-                num2 = Int32.Parse(SecondText.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Số không hợp lệ!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            sum = num1 + num2;
-            ResultBox.Text = sum.ToString();
-        }
     }
 }
