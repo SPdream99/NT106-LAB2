@@ -32,7 +32,7 @@ start Lab2.csproj
 ```
 
 ### 4. Build và chạy Lab02
-* Set Lab02 thành Startup Project
+* Set Lab2 thành Startup Project
 * Debug -> Start Debugging
 
 ### 5. Sử dụng ứng dụng
@@ -40,8 +40,7 @@ Từ Lab02, chọn bài muốn test
 
 | Bài | Tên Ứng dụng | Mô tả ngắn gọn |
 |------------------|:--------------:|:--------------:|
-| **Bài 01** | Ghi và Đọc file | Viết chương trình đọc nội dung một file innput và xuất ra màn hình. Sau đó ghi nội
-dung (chuyển toàn bộ ký tự sang kiểu in hoa) xuống file ouput.|
+| **Bài 01** | Ghi và Đọc file | Viết chương trình đọc nội dung một file innput và xuất ra màn hình. Sau đó ghi nội dung (chuyển toàn bộ ký tự sang kiểu in hoa) xuống file ouput.|
 
 
 ## Tài liệu tham khảo
