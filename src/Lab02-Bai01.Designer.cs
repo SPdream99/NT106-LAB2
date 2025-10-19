@@ -59,7 +59,7 @@
             this.ImportButton.Location = new System.Drawing.Point(3, 23);
             this.ImportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImportButton.Name = "ImportButton";
-            this.ImportButton.Size = new System.Drawing.Size(123, 68);
+            this.ImportButton.Size = new System.Drawing.Size(153, 68);
             this.ImportButton.TabIndex = 0;
             this.ImportButton.Text = "Nhập";
             this.ImportButton.UseVisualStyleBackColor = false;
@@ -67,12 +67,13 @@
             // Title
             // 
             this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.Location = new System.Drawing.Point(271, 11);
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(17, 25);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(394, 40);
+            this.Title.Size = new System.Drawing.Size(224, 25);
             this.Title.TabIndex = 1;
             this.Title.Text = "Phần mềm đọc ghi file";
+            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InputBox
             // 
@@ -119,7 +120,7 @@
             this.Output.Size = new System.Drawing.Size(320, 69);
             this.Output.TabIndex = 9;
             this.Output.TabStop = false;
-            this.Output.Text = "Tên File đọc";
+            this.Output.Text = "Tên File ghi";
             // 
             // OutputBox
             // 
@@ -135,10 +136,10 @@
             this.ExportButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.ExportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExportButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ExportButton.Location = new System.Drawing.Point(200, 23);
+            this.ExportButton.Location = new System.Drawing.Point(154, 23);
             this.ExportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExportButton.Name = "ExportButton";
-            this.ExportButton.Size = new System.Drawing.Size(123, 68);
+            this.ExportButton.Size = new System.Drawing.Size(169, 68);
             this.ExportButton.TabIndex = 10;
             this.ExportButton.Text = "Xuất";
             this.ExportButton.UseVisualStyleBackColor = false;
@@ -199,6 +200,7 @@
             // 
             this.ProgramContent.AutoSize = true;
             this.ProgramContent.Controls.Add(this.Editor);
+            this.ProgramContent.Controls.Add(this.Title);
             this.ProgramContent.Controls.Add(this.FileManager);
             this.ProgramContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ProgramContent.Location = new System.Drawing.Point(0, 0);
@@ -217,7 +219,6 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.ProgramContent);
-            this.Controls.Add(this.Title);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Lab02_Bai01";
             this.Text = "Bai1";
@@ -232,6 +233,7 @@
             this.Editor.ResumeLayout(false);
             this.Editor.PerformLayout();
             this.ProgramContent.ResumeLayout(false);
+            this.ProgramContent.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

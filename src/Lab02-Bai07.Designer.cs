@@ -28,138 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RemoveButton = new System.Windows.Forms.Button();
             this.Title = new System.Windows.Forms.Label();
-            this.ResultBox = new System.Windows.Forms.TextBox();
-            this.ExitButton = new System.Windows.Forms.Button();
-            this.FindButton = new System.Windows.Forms.Button();
-            this.ResultLabel = new System.Windows.Forms.Label();
-            this.DatePicker = new System.Windows.Forms.DateTimePicker();
-            this.DateLabel = new System.Windows.Forms.Label();
+            this.EditorBox = new System.Windows.Forms.TextBox();
+            this.FileManager = new System.Windows.Forms.GroupBox();
+            this.Editor = new System.Windows.Forms.GroupBox();
+            this.ProgramContent = new System.Windows.Forms.GroupBox();
+            this.FileNameInput = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.FileManager.SuspendLayout();
+            this.Editor.SuspendLayout();
+            this.ProgramContent.SuspendLayout();
+            this.FileNameInput.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // RemoveButton
-            // 
-            this.RemoveButton.BackColor = System.Drawing.Color.Gray;
-            this.RemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.RemoveButton.Location = new System.Drawing.Point(351, 208);
-            this.RemoveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(101, 49);
-            this.RemoveButton.TabIndex = 0;
-            this.RemoveButton.Text = "Xóa";
-            this.RemoveButton.UseVisualStyleBackColor = false;
-            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // Title
             // 
             this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.Location = new System.Drawing.Point(266, 45);
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(3, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(305, 36);
+            this.Title.Size = new System.Drawing.Size(226, 25);
             this.Title.TabIndex = 1;
-            this.Title.Text = "Tìm cung hoàng đạo";
+            this.Title.Text = "Phần mềm duyệt ổ đĩa";
+            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ResultBox
+            // EditorBox
             // 
-            this.ResultBox.Location = new System.Drawing.Point(173, 365);
-            this.ResultBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ResultBox.Name = "ResultBox";
-            this.ResultBox.ReadOnly = true;
-            this.ResultBox.Size = new System.Drawing.Size(228, 22);
-            this.ResultBox.TabIndex = 6;
+            this.EditorBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditorBox.Location = new System.Drawing.Point(3, 23);
+            this.EditorBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EditorBox.Multiline = true;
+            this.EditorBox.Name = "EditorBox";
+            this.EditorBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.EditorBox.Size = new System.Drawing.Size(540, 442);
+            this.EditorBox.TabIndex = 6;
             // 
-            // ExitButton
+            // FileManager
             // 
-            this.ExitButton.BackColor = System.Drawing.Color.Gray;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ExitButton.Location = new System.Drawing.Point(603, 208);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(100, 49);
-            this.ExitButton.TabIndex = 8;
-            this.ExitButton.Text = "Thoát";
-            this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.FileManager.Controls.Add(this.FileNameInput);
+            this.FileManager.Controls.Add(this.Title);
+            this.FileManager.Dock = System.Windows.Forms.DockStyle.Left;
+            this.FileManager.Location = new System.Drawing.Point(11, 31);
+            this.FileManager.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FileManager.Name = "FileManager";
+            this.FileManager.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FileManager.Size = new System.Drawing.Size(332, 469);
+            this.FileManager.TabIndex = 12;
+            this.FileManager.TabStop = false;
             // 
-            // FindButton
+            // Editor
             // 
-            this.FindButton.BackColor = System.Drawing.Color.Gray;
-            this.FindButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FindButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.FindButton.Location = new System.Drawing.Point(109, 208);
-            this.FindButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FindButton.Name = "FindButton";
-            this.FindButton.Size = new System.Drawing.Size(103, 49);
-            this.FindButton.TabIndex = 9;
-            this.FindButton.Text = "Tìm";
-            this.FindButton.UseVisualStyleBackColor = false;
-            this.FindButton.Click += new System.EventHandler(this.FindButton_Click);
+            this.Editor.Controls.Add(this.EditorBox);
+            this.Editor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Editor.Location = new System.Drawing.Point(343, 31);
+            this.Editor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Editor.Name = "Editor";
+            this.Editor.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Editor.Size = new System.Drawing.Size(546, 469);
+            this.Editor.TabIndex = 13;
+            this.Editor.TabStop = false;
+            this.Editor.Text = "Trình chỉnh đọc file";
             // 
-            // ResultLabel
+            // ProgramContent
             // 
-            this.ResultLabel.AutoSize = true;
-            this.ResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultLabel.Location = new System.Drawing.Point(80, 361);
-            this.ResultLabel.Name = "ResultLabel";
-            this.ResultLabel.Size = new System.Drawing.Size(87, 25);
-            this.ResultLabel.TabIndex = 7;
-            this.ResultLabel.Text = "Kết quả";
+            this.ProgramContent.AutoSize = true;
+            this.ProgramContent.Controls.Add(this.Editor);
+            this.ProgramContent.Controls.Add(this.FileManager);
+            this.ProgramContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ProgramContent.Location = new System.Drawing.Point(0, 0);
+            this.ProgramContent.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.ProgramContent.Name = "ProgramContent";
+            this.ProgramContent.Padding = new System.Windows.Forms.Padding(11, 12, 11, 62);
+            this.ProgramContent.Size = new System.Drawing.Size(900, 562);
+            this.ProgramContent.TabIndex = 14;
+            this.ProgramContent.TabStop = false;
             // 
-            // DatePicker
+            // FileNameInput
             // 
-            this.DatePicker.CustomFormat = "dd/MM/yyyy";
-            this.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DatePicker.Location = new System.Drawing.Point(301, 149);
-            this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(222, 22);
-            this.DatePicker.TabIndex = 14;
+            this.FileNameInput.Controls.Add(this.listBox1);
+            this.FileNameInput.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FileNameInput.Location = new System.Drawing.Point(3, 23);
+            this.FileNameInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FileNameInput.Name = "FileNameInput";
+            this.FileNameInput.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FileNameInput.Size = new System.Drawing.Size(326, 442);
+            this.FileNameInput.TabIndex = 14;
+            this.FileNameInput.TabStop = false;
             // 
-            // DateLabel
+            // listBox1
             // 
-            this.DateLabel.AutoSize = true;
-            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(66, 149);
-            this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(229, 22);
-            this.DateLabel.TabIndex = 3;
-            this.DateLabel.Text = "Chọn ngày tháng năm sinh:";
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(3, 23);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(320, 415);
+            this.listBox1.TabIndex = 0;
             // 
             // Lab02_Bai07
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AllowDrop = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.DatePicker);
-            this.Controls.Add(this.FindButton);
-            this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.ResultLabel);
-            this.Controls.Add(this.ResultBox);
-            this.Controls.Add(this.DateLabel);
-            this.Controls.Add(this.Title);
-            this.Controls.Add(this.RemoveButton);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.ProgramContent);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Lab02_Bai07";
             this.Text = "Bai7";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.FileManager.ResumeLayout(false);
+            this.FileManager.PerformLayout();
+            this.Editor.ResumeLayout(false);
+            this.Editor.PerformLayout();
+            this.ProgramContent.ResumeLayout(false);
+            this.FileNameInput.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button RemoveButton;
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TextBox ResultBox;
-        private System.Windows.Forms.Button FindButton;
-        private System.Windows.Forms.Label ResultLabel;
-        private System.Windows.Forms.DateTimePicker DatePicker;
-        private System.Windows.Forms.Label DateLabel;
-        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.TextBox EditorBox;
+        private System.Windows.Forms.GroupBox FileManager;
+        private System.Windows.Forms.GroupBox Editor;
+        private System.Windows.Forms.GroupBox ProgramContent;
+        private System.Windows.Forms.GroupBox FileNameInput;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
