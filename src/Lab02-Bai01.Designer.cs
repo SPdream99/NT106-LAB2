@@ -40,25 +40,28 @@
             this.FileManager = new System.Windows.Forms.GroupBox();
             this.Editor = new System.Windows.Forms.GroupBox();
             this.ProgramContent = new System.Windows.Forms.GroupBox();
+            this.FileNameInput = new System.Windows.Forms.GroupBox();
             this.Input.SuspendLayout();
             this.Output.SuspendLayout();
             this.Buttons.SuspendLayout();
             this.FileManager.SuspendLayout();
             this.Editor.SuspendLayout();
             this.ProgramContent.SuspendLayout();
+            this.FileNameInput.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImportButton
             // 
             this.ImportButton.BackColor = System.Drawing.Color.Gray;
+            this.ImportButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.ImportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImportButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ImportButton.Location = new System.Drawing.Point(0, 6);
+            this.ImportButton.Location = new System.Drawing.Point(3, 18);
             this.ImportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ImportButton.Name = "ImportButton";
-            this.ImportButton.Size = new System.Drawing.Size(109, 43);
+            this.ImportButton.Size = new System.Drawing.Size(109, 55);
             this.ImportButton.TabIndex = 0;
-            this.ImportButton.Text = "Nhập File";
+            this.ImportButton.Text = "Nhập";
             this.ImportButton.UseVisualStyleBackColor = false;
             // 
             // Title
@@ -81,21 +84,25 @@
             // 
             // EditorBox
             // 
+            this.EditorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EditorBox.Location = new System.Drawing.Point(6, 20);
             this.EditorBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EditorBox.Multiline = true;
             this.EditorBox.Name = "EditorBox";
             this.EditorBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.EditorBox.Size = new System.Drawing.Size(441, 272);
+            this.EditorBox.Size = new System.Drawing.Size(458, 377);
             this.EditorBox.TabIndex = 6;
             // 
             // Input
             // 
             this.Input.Controls.Add(this.InputBox);
+            this.Input.Dock = System.Windows.Forms.DockStyle.Top;
             this.Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Input.Location = new System.Drawing.Point(9, 10);
+            this.Input.Location = new System.Drawing.Point(3, 18);
             this.Input.Name = "Input";
-            this.Input.Size = new System.Drawing.Size(274, 55);
+            this.Input.Size = new System.Drawing.Size(283, 55);
             this.Input.TabIndex = 8;
             this.Input.TabStop = false;
             this.Input.Text = "Tên File đọc";
@@ -103,10 +110,11 @@
             // Output
             // 
             this.Output.Controls.Add(this.OutputBox);
+            this.Output.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Output.Location = new System.Drawing.Point(9, 93);
+            this.Output.Location = new System.Drawing.Point(3, 101);
             this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(274, 55);
+            this.Output.Size = new System.Drawing.Size(283, 55);
             this.Output.TabIndex = 9;
             this.Output.TabStop = false;
             this.Output.Text = "Tên File đọc";
@@ -122,34 +130,36 @@
             // ExportButton
             // 
             this.ExportButton.BackColor = System.Drawing.Color.Gray;
+            this.ExportButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.ExportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExportButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ExportButton.Location = new System.Drawing.Point(131, 6);
+            this.ExportButton.Location = new System.Drawing.Point(177, 18);
             this.ExportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExportButton.Name = "ExportButton";
-            this.ExportButton.Size = new System.Drawing.Size(109, 43);
+            this.ExportButton.Size = new System.Drawing.Size(109, 55);
             this.ExportButton.TabIndex = 10;
-            this.ExportButton.Text = "Xuất File";
+            this.ExportButton.Text = "Xuất";
             this.ExportButton.UseVisualStyleBackColor = false;
             // 
             // Buttons
             // 
             this.Buttons.Controls.Add(this.ExportButton);
             this.Buttons.Controls.Add(this.ImportButton);
-            this.Buttons.Location = new System.Drawing.Point(11, 154);
+            this.Buttons.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Buttons.Location = new System.Drawing.Point(3, 296);
             this.Buttons.Name = "Buttons";
-            this.Buttons.Size = new System.Drawing.Size(246, 54);
+            this.Buttons.Size = new System.Drawing.Size(289, 76);
             this.Buttons.TabIndex = 11;
             this.Buttons.TabStop = false;
             // 
             // FileManager
             // 
+            this.FileManager.Controls.Add(this.FileNameInput);
             this.FileManager.Controls.Add(this.Buttons);
-            this.FileManager.Controls.Add(this.Output);
-            this.FileManager.Controls.Add(this.Input);
-            this.FileManager.Location = new System.Drawing.Point(19, 12);
+            this.FileManager.Dock = System.Windows.Forms.DockStyle.Left;
+            this.FileManager.Location = new System.Drawing.Point(10, 25);
             this.FileManager.Name = "FileManager";
-            this.FileManager.Size = new System.Drawing.Size(295, 230);
+            this.FileManager.Size = new System.Drawing.Size(295, 375);
             this.FileManager.TabIndex = 12;
             this.FileManager.TabStop = false;
             // 
@@ -158,26 +168,43 @@
             this.Editor.Controls.Add(this.EditorBox);
             this.Editor.Location = new System.Drawing.Point(317, 22);
             this.Editor.Name = "Editor";
-            this.Editor.Size = new System.Drawing.Size(464, 295);
+            this.Editor.Size = new System.Drawing.Size(464, 292);
             this.Editor.TabIndex = 13;
             this.Editor.TabStop = false;
             this.Editor.Text = "Trình chỉnh sửa file";
             // 
             // ProgramContent
             // 
+            this.ProgramContent.AutoSize = true;
             this.ProgramContent.Controls.Add(this.Editor);
             this.ProgramContent.Controls.Add(this.FileManager);
-            this.ProgramContent.Location = new System.Drawing.Point(1, 48);
+            this.ProgramContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ProgramContent.Location = new System.Drawing.Point(0, 0);
+            this.ProgramContent.Margin = new System.Windows.Forms.Padding(10);
             this.ProgramContent.Name = "ProgramContent";
-            this.ProgramContent.Size = new System.Drawing.Size(799, 401);
+            this.ProgramContent.Padding = new System.Windows.Forms.Padding(10, 10, 10, 50);
+            this.ProgramContent.Size = new System.Drawing.Size(800, 450);
             this.ProgramContent.TabIndex = 14;
             this.ProgramContent.TabStop = false;
+            // 
+            // FileNameInput
+            // 
+            this.FileNameInput.Controls.Add(this.Input);
+            this.FileNameInput.Controls.Add(this.Output);
+            this.FileNameInput.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FileNameInput.Location = new System.Drawing.Point(3, 18);
+            this.FileNameInput.Name = "FileNameInput";
+            this.FileNameInput.Size = new System.Drawing.Size(289, 159);
+            this.FileNameInput.TabIndex = 14;
+            this.FileNameInput.TabStop = false;
             // 
             // Lab02_Bai01
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ProgramContent);
             this.Controls.Add(this.Title);
@@ -194,6 +221,7 @@
             this.Editor.ResumeLayout(false);
             this.Editor.PerformLayout();
             this.ProgramContent.ResumeLayout(false);
+            this.FileNameInput.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,6 +241,7 @@
         private System.Windows.Forms.GroupBox FileManager;
         private System.Windows.Forms.GroupBox Editor;
         private System.Windows.Forms.GroupBox ProgramContent;
+        private System.Windows.Forms.GroupBox FileNameInput;
     }
 }
 
